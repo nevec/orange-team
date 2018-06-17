@@ -8,4 +8,8 @@ def index(req):
 def map(req):
 	return HttpResponse(render(req, 'accounts/map.html', {}))
 
+def test(req):
+	return HttpResponse(render(req, 'accounts/test.html', {}))
+
+
 # Create your views here.

@@ -24,5 +24,6 @@ from accounts import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', accounts.views.index, name='index'),
-    path('map/', accounts.views.map, name='map')
+    path('map/', accounts.views.map, name='map'),
+    path('test/', accounts.views.test, name='test'),
 ] + staticfiles_urlpatterns()

@@ -1,0 +1,156 @@
+{% extends 'base.html'%}
+{% block content %}
+{% load static %}
+
+<div id="test_background">
+    <div align="center" id="test">
+
+	<form method="get" id="form1">
+        <p>Стоя, вдыхайте воздух через нос, стараясь максимально заполнить объем легких. 
+		Затем как можно дольше выдыхайте через рот. Ваш выдох длится:
+        </p>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r1" name="r1" class="custom-control-input">
+            <label class="custom-control-label" for="r1"> менее 15 секунд.</label>
+        </div>
+	<br>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r2" name="r1" class="custom-control-input">
+            <label class="custom-control-label" for="r2">от 15 до 25 секунд.</label>
+        </div>
+<br>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r3" name="r1" class="custom-control-input">
+            <label class="custom-control-label" for="r3"> более 25 секунд.</label>
+        </div>
+        <br>
+
+        <p>С помощью сантиметра измерьте окружность грудной клетки (на уровне нижнего края грудинной кости). 
+		Глубоко вдохните, стараясь раздвинуть грудную клетку. Объем увеличился:</p>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r21" name="r2" class="custom-control-input">
+            <label class="custom-control-label" for="r21"> меньше чем на 1 сантиметр.</label>
+        </div>
+<br>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r22" name="r2" class="custom-control-input">
+            <label class="custom-control-label" for="r22"> от 1 до 3 сантиметров.</label>
+        </div><br>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r23" name="r2" class="custom-control-input">
+            <label class="custom-control-label" for="r23">больше чем на 3 сантиметра.</label>
+        </div>
+        <br>
+
+        <p>Поднимаясь пешком по лестнице…</p>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r31" name="r3" class="custom-control-input">
+            <label class="custom-control-label" for="r31"> Вы начинаете задыхаться между вторыми третьим этажами.</label>
+        </div><br>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r32" name="r3" class="custom-control-input">
+            <label class="custom-control-label" for="r32">Вы останавливаетесь отдохнуть на четвертом этаже.</label>
+        </div><br>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r33" name="r3" class="custom-control-input">
+            <label class="custom-control-label" for="r33">Вы взбираетесь на шестой этаж не переводя дыхания.</label>
+        </div><br>
+    
+
+        <p>Сядьте на воображаемый стул, спиной прислонившись к стене, ноги на ширине плеч. 
+		Сколько вы можете сохранять эту позу?</p>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r41" name="r4" class="custom-control-input">
+            <label class="custom-control-label" for="r41"> Менее 30 секунд.</label>
+        </div><br>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r42" name="r4" class="custom-control-input">
+            <label class="custom-control-label" for="r42">От 30 секунд до 1 минуты.</label>
+        </div><br>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r43" name="r4" class="custom-control-input">
+            <label class="custom-control-label" for="r43">Более 1 минуты.</label>
+        </div><br>
+       
+
+
+        <p>Отжимайтесь от пола (с упором на колени для женщин, на пальцы ног – для мужчин).</p>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r51" name="r5" class="custom-control-input">
+            <label class="custom-control-label" for="r51"> Вы отжались менее 7 раз (для женщин) или менее 10 раз (для мужчин).</label>
+        </div><br>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r52" name="r5" class="custom-control-input">
+            <label class="custom-control-label" for="r52">Вы сумели отжаться от 7 до 17 раз (для женщин) или от 10 до 20 (для мужчин).</label>
+        </div><br>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r53" name="r5" class="custom-control-input">
+            <label class="custom-control-label" for="r53"> Вы отжались больше 17 раз (для женщин) или больше 20 раз (для мужчин).</label>
+        </div><br>
+        
+		<p>Лежа на спине, согните колени, поставив ступни на пол. На выдохе опустите подбородок к груди,
+		а руками потянитесь вперед, к коленям, приподнимая корпус и отрывая лопатки от пола. 
+		Вернитесь в исходное положение и повторяйте упражнение. Вы смогли подняться:</p>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r51" name="r5" class="custom-control-input">
+            <label class="custom-control-label" for="r51">  менее 15 раз.</label>
+        </div><br>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r52" name="r5" class="custom-control-input">
+            <label class="custom-control-label" for="r52">от 15 до 30 раз.</label>
+        </div><br>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r53" name="r5" class="custom-control-input">
+            <label class="custom-control-label" for="r53">  более 30 раз.</label>
+        </div><br>
+        
+        <p>Согните руки в локтях и постарайтесь их сцепить за спиной (одна тянется сверху, другая снизу).</p>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r31" name="r3" class="custom-control-input">
+            <label class="custom-control-label" for="r31">  Они остаются очень далеко друг от друга.</label>
+        </div><br>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r32" name="r3" class="custom-control-input">
+            <label class="custom-control-label" for="r32"> Вы можете свести кончики пальцев.</label>
+        </div><br>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r33" name="r3" class="custom-control-input">
+            <label class="custom-control-label" for="r33"> Вы можете сцепить руки.</label>
+        </div><br>
+		
+		<p>Не сгибая коленей, коснитесь руками пола.</p>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r31" name="r3" class="custom-control-input">
+            <label class="custom-control-label" for="r31">  Вы смогли дотянуться только до голеней.</label>
+        </div><br>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r32" name="r3" class="custom-control-input">
+            <label class="custom-control-label" for="r32">Вы смогли прикоснуться к полу кончиками пальцев.</label>
+        </div><br>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r33" name="r3" class="custom-control-input">
+            <label class="custom-control-label" for="r33">Вы упираетесь в пол ладонями.</label>
+        </div><br>
+		
+		<p>Лежа на спине с согнутыми ногами, выпрямите одну ногу и поднимите ее под прямым углом: 
+		пальцы стопы тяните на себя, а пятку – к потолку.</p>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r31" name="r3" class="custom-control-input">
+            <label class="custom-control-label" for="r31">  Вам больно держать ногу в такой позе.</label>
+        </div><br>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r32" name="r3" class="custom-control-input">
+            <label class="custom-control-label" for="r32">Вам неприятно, но дискомфорт можно перенести.</label>
+        </div><br>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="r33" name="r3" class="custom-control-input">
+            <label class="custom-control-label" for="r33">Вы не чувствуете никакого дискомфорта.</label>
+        </div><br>
+	</form>
+	<button type="submit" form="form1" value="Submit" id="submit_button">Submit</button>
+		<br><br><br>
+
+    </div>
+</div>
+ 
+{% endblock %}
