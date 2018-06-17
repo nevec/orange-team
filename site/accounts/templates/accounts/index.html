@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en" >
 
@@ -9,7 +11,7 @@
 
   
   
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="{% static "accounts/style.css" %}">
 
   
 </head>
@@ -17,12 +19,12 @@
 <body>
 
   	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.html">Главная</a>
+  <a class="navbar-brand" href="/">Главная</a>
    
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Карта <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/map/">Карта <span class="sr-only">(current)</span></a>
       </li>
       
       
@@ -44,8 +46,8 @@
 <div id="header">
 <h2>Хочешь заняться спортом?</h2>
   <h3>Просто открой карту :)</h3>
-  <a href="#">
-    <center><h4 id="map">Спортивные события</h4></center>
+  <a href="/map/">
+    <center><h4 id="map-btn">Спортивные события</h4></center>
   </a>
 </div>
 </div>
