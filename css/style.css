@@ -1,0 +1,27 @@
+#header{
+  text-align: center;
+  margin-top: 50px;
+ font-family: "Georgia", Times, serif;
+}
+body{
+  background-image: url("back.jpg");
+}
+a:hover{
+  text-decoration: none;
+}
+a:active{
+  text-decoration: none;
+}
+a{
+  outline: none;
+}
+#map{
+  color: white;
+  background-color: DarkCyan;
+  width: 250px;
+  border-radius: 10px;
+  padding: 3px 1px;
+  margin-top: 20px;
+  font-family: sans-serif;
+  font-size: 20px;
+}
