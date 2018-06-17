@@ -26,4 +26,5 @@ urlpatterns = [
     path('', accounts.views.index, name='index'),
     path('map/', accounts.views.map, name='map'),
     path('test/', accounts.views.test, name='test'),
+    path('locations/', accounts.views.getPlaces, name='locations')
 ] + staticfiles_urlpatterns()
