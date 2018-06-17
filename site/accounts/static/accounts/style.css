@@ -87,3 +87,17 @@ padding: 10px;
 #submit_button:hover{
   cursor: pointer;
 }
+#login, #signUp {
+    margin: 10px auto;
+    width: 300px;
+}
+#login_button, #signUp_button{
+background-color: RoyalBlue  ;
+font-size: 120%;
+color: white;
+border-radius: 10px;
+border: 0px;
+margin-top: 5px;
+padding: 3px 5px;
+font-weight: bold;
+}
