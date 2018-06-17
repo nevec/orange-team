@@ -27,7 +27,7 @@ urlpatterns = [
     path('map/', accounts.views.map, name='map'),
     path('test/', accounts.views.test, name='test'),
 
-    path('locations/', accounts.views.getPlaces, name='locations')
+    path('locations/', accounts.views.getPlaces, name='locations'),
 
     path('login/', accounts.views.login, name ='login'),
     path('register/',accounts.views.register, name = 'register'),
