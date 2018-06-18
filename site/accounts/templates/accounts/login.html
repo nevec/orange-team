@@ -5,16 +5,17 @@
 
 
 <body>
-<div id="login">
- <form action="" method="get" id="login_form">
-  Логин:<br>
-  <input type="text" name="firstname"><br>
- Пароль:<br>
-  <input type="text" name="lastname">
-<br>
- <input type="submit" value="Войти" id="login_button" >
-</form>
-</div>
+	<div id="login">
+ 		<form action="/login_data/" method="post" id="login_form">
+ 			{% csrf_token %}
+  			Логин:<br>
+  			<input type="text" name="login"><br>
+ 			Пароль:<br>
+  			<input type="text" name="pass">
+			<br>
+ 			<input type="submit" value="Войти" id="login_button" >
+		</form>
+	</div>
 </body>
 
 {% endblock %}

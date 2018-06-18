@@ -128,3 +128,11 @@ border: 1px solid grey;
 margin: auto;
 border-radius: 10px;
 }
+#answer1{
+ width:600px;
+margin: 10px auto;
+}
+#answer2{
+ width: 300px;
+margin: 10px auto;
+}

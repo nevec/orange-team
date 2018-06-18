@@ -37,7 +37,8 @@ urlpatterns = [
     path('test2/', accounts.views.test2, name='test2'),
     path('success/', accounts.views.success, name='success'),
     path('logout/', accounts.views.logout),
-    path('test_res/', accounts.views.test_res),
+    path('test1_answ/', accounts.views.test1_answ),
+    path('test2_answ/', accounts.views.test2_answ),
 ] + staticfiles_urlpatterns()
 
 

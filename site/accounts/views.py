@@ -64,5 +64,8 @@ def logout(req):
 	auth.logout(req)
 	return HttpResponseRedirect('/')
 
-def test_res(req):
-	return HttpResponse(render(req, 'accounts/test_res.html'), {})
+def test1_answ(req):
+	return HttpResponse(render(req, 'accounts/test1_answer.html'), {})
+
+def test2_answ(req):
+	return HttpResponse(render(req, 'accounts/test2_answer.html'), {})	
