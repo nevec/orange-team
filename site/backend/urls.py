@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-
+from django.contrib.auth import logout
 
 import accounts
 from accounts import views
@@ -29,13 +29,14 @@ urlpatterns = [
 
     path('locations/', accounts.views.getPlaces, name='locations'),
 
-    path('login/', accounts.views.login, name ='login'),
+    path('login/', accounts.views.loginp, name ='loginp'),
     path('register/',accounts.views.register, name = 'register'),
 
     path('login_data/',accounts.views.get_log_pass, name ='get_log_pass'),
     path('register_data/',accounts.views.get_reg, name ='get_reg'),
     path('test2/', accounts.views.test2, name='test2'),
     path('success/', accounts.views.success, name='success'),
+    path('logout/', accounts.views.logout)
 ] + staticfiles_urlpatterns()
-    
+
 

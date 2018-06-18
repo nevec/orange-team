@@ -121,3 +121,10 @@ margin-top: 5px;
 padding: 3px 5px;
 font-weight: bold;
 }
+#pb_back{
+width:60px;
+height: 10px;
+border: 1px solid grey;
+margin: auto;
+border-radius: 10px;
+}
