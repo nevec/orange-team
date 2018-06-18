@@ -31,5 +31,6 @@ urlpatterns = [
 
     path('login/', accounts.views.login, name ='login'),
     path('register/',accounts.views.register, name = 'register'),
-
-] + staticfiles_urlpatterns()
+    path('test2/', accounts.views.test2, name='test2'),
+    path('success/', accounts.views.success, name='success'),
+]

@@ -29,3 +29,9 @@ def login(req):
 def register(req):
 	return HttpResponse(render(req, 'accounts/register.html'), {})
 # Create your views here.
+
+def test2(req):
+	return HttpResponse(render(req, 'accounts/test2.html'), {})
+
+def success(req):
+	return HttpResponse(render(req, 'accounts/success.html'), {})
