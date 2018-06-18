@@ -37,7 +37,7 @@ def get_log_pass(req):
 	user = authenticate(req, username=dict['login'], password=dict['pass'])
 	if user is not None:
 		login(req,user)
-	return HttpResponseRedirect('/success/')
+	return HttpResponseRedirect('/')
 
 def get_reg(req):
 	dict = req.POST
@@ -49,7 +49,7 @@ def get_reg(req):
 			flag = 0
 	if (flag == 1):			
 		user.save()
-		return HttpResponseRedirect('/')	
+		return HttpResponseRedirect('/success/')	
 	else:
 		return HttpResponseRedirect('/register/')	
 # Create your views here.
