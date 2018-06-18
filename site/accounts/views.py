@@ -1,7 +1,8 @@
 from django.shortcuts import render
 
 from django.http import HttpResponse, JsonResponse,HttpResponseRedirect
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate, login
+import django.contrib.auth as auth
 from django.contrib.auth.models import User
 from .models import Place
 
@@ -24,7 +25,7 @@ def getPlaces(req):
 
 	return JsonResponse(resp)
 
-def login(req):
+def loginp(req):
 	return HttpResponse(render(req, 'accounts/login.html'), {})
 
 def register(req):
@@ -32,18 +33,25 @@ def register(req):
 
 def get_log_pass(req):
 	dict = req.POST
+
 	user = authenticate(req, username=dict['login'], password=dict['pass'])
-	#login(req,user)
-	return HttpResponseRedirect('/')
+	if user is not None:
+		login(req,user)
+	return HttpResponseRedirect('/success/')
 
 def get_reg(req):
 	dict = req.POST
 	user = User.objects.create_user(dict['login'],dict['email'],dict['password'])
 	user.is_active = False
-	#user.first_name = dict['firstname']
-	#user.last_name = dict['lastname']
-	user.save()
-	return HttpResponseRedirect('/')	
+	flag = 1
+	for i in dict:
+		if (i == None):
+			flag = 0
+	if (flag == 1):			
+		user.save()
+		return HttpResponseRedirect('/')	
+	else:
+		return HttpResponseRedirect('/register/')	
 # Create your views here.
 
 def test2(req):
@@ -51,3 +59,10 @@ def test2(req):
 
 def success(req):
 	return HttpResponse(render(req, 'accounts/success.html'), {})
+
+def logout(req):
+	auth.logout(req)
+	return HttpResponseRedirect('/')
+
+def test_res(req):
+	return HttpResponse(render(req, 'accounts/test_res.html'), {})
