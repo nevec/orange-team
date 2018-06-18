@@ -45,3 +45,9 @@ def get_reg(req):
 	user.save()
 	return HttpResponseRedirect('/')	
 # Create your views here.
+
+def test2(req):
+	return HttpResponse(render(req, 'accounts/test2.html'), {})
+
+def success(req):
+	return HttpResponse(render(req, 'accounts/success.html'), {})

@@ -24,10 +24,6 @@ function initMap() {
     });
 }
 
-var url = '127.0.0.1/locations/'
-var request = new XMLHttpRequest();
-request.open(url)
-
 var locations = [{
     lat: 50.436,
     lng: 30.521

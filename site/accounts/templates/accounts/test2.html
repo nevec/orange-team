@@ -1,0 +1,58 @@
+{% extends 'base.html'%}
+{% block content %}
+{% load static %}
+
+<div id="test2_background">
+    <div align="center" id="test2">
+
+	<form method="get" id="form2">
+        <p>Пол
+        </p>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="rr1" name="rr1" class="custom-control-input">
+            <label class="custom-control-label" for="rr1"> Мужской</label>
+        </div>
+	<br>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="rr2" name="rr1" class="custom-control-input">
+            <label class="custom-control-label" for="rr2">Женский</label>
+        </div>
+<br>
+
+        <p >Возраст</p>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="rr21" name="rr2" class="custom-control-input">
+            <label class="custom-control-label" for="rr21"> меньше чем 18</label>
+        </div>
+<br>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="rr22" name="rr2" class="custom-control-input">
+            <label class="custom-control-label" for="rr22"> 18-40 лет</label>
+        </div><br>
+        <div class="custom-control custom-radio ">
+            <input type="radio" id="rr23" name="rr2" class="custom-control-input">
+            <label class="custom-control-label" for="rr23">больше 40 лет</label>
+        </div>
+        <br>
+
+        <p>Рост</p>
+        <div class="custom-control custom-radio " >
+  <input type="text" name="growth" ><br>
+        </div><br>
+    
+
+        <p>Вес</p>
+        <div class="custom-control custom-radio ">
+  <input type="text" name="weight"><br>
+        </div><br>
+       
+
+        
+		</form>
+	<button type="submit" form="form2" value="Submit" id="submit_button2">Отправить</button>
+		<br><br><br>
+
+    </div>
+</div>
+
+{% endblock %}

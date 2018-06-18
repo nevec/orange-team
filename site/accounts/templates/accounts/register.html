@@ -4,8 +4,10 @@
 <body>
 
 <div id="signUp">
+
  <form action="/register_data/" method="post" id="signUp_form">
   {% csrf_token %}
+
   Имя:<br>
   <input type="text" name="firstname"><br>
   Фамилия:<br>
